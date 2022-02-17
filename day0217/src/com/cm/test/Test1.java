@@ -4,6 +4,7 @@ import com.cm.entity.Product;
 import com.cm.utils.JDBCUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -26,6 +27,7 @@ public class Test1 {
         }
     }
     @Test
+    //添加
     public void Test1() throws SQLException {
 
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDruidDataSource());
@@ -41,6 +43,7 @@ public class Test1 {
     }
 
     @Test
+    //删除
     public void Test2() throws SQLException {
 
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDruidDataSource());
@@ -52,6 +55,24 @@ public class Test1 {
         int i = queryRunner.update(sql,6);
 
         System.out.println("删除成功"+i);
+
+    }
+
+    @Test
+    //查询总条数
+    public void Test3() throws SQLException {
+
+        QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDruidDataSource());
+
+        String sql="select count (id) from product";
+
+
+        Long obj = (Long) queryRunner.query(sql,new ScalarHandler());
+
+        int i = obj.intValue();
+
+        System.out.println(i);
+
 
     }
 
