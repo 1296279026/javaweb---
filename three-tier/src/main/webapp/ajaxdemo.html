@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="fun">点我一下</button>
+
+</body>
+
+<script>
+    function fun() {
+        myrequest = null;
+        if (window.XMLHttpRequest) {
+            myrequest=new XMLHttpRequest();
+        } else {
+            myrequest=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        myrequest.open("GET","ajax?username=jack",true);
+
+        myrequest.send();
+
+
+    }
+
+</script>
+</html>
