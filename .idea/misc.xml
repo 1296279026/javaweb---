@@ -11,7 +11,9 @@
     <file type="web" url="file://$PROJECT_DIR$/LoginDemo" />
     <file type="web" url="file://$PROJECT_DIR$/RequestDemo" />
     <file type="web" url="file://$PROJECT_DIR$/SessionDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/tao-shop" />
     <file type="web" url="file://$PROJECT_DIR$/Test" />
+    <file type="web" url="file://$PROJECT_DIR$/three-tier" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
