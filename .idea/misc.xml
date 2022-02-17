@@ -22,6 +22,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/day0215/pom.xml" />
+        <option value="$PROJECT_DIR$/three_tier/pom.xml" />
+        <option value="$PROJECT_DIR$/三层架构_认识/pom.xml" />
       </set>
     </option>
   </component>
