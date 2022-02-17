@@ -12,7 +12,7 @@ public class JDBCUtils {
     static {
         druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        druidDataSource.setUrl("jdbc:mysql:///product");
+        druidDataSource.setUrl("jdbc:mysql:///product?useSSL=false");
         druidDataSource.setUsername("root");
         druidDataSource.setPassword("1234");
 

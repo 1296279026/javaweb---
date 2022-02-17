@@ -11,7 +11,7 @@ import java.util.List;
 public class ProductDaoImpl implements ProductDao{
     //查询商品
     @Override
-    public void show(){
+    public List<Product> show(){
         //创建queryRunner  查询对象(数据库连接)
         QueryRunner queryRunner = new QueryRunner(JDBCUtils.getDruidDataSource());
 
@@ -19,18 +19,13 @@ public class ProductDaoImpl implements ProductDao{
 
         List<Product> productList = null;
         try {
+
             productList = queryRunner.query(sql, new BeanListHandler<Product>(Product.class));
-
-            if (productList != null && productList.size() > 0) {
-
-                for (Product product : productList) {
-                    System.out.println(product);
-                }
-            }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
+        return productList;
     }
 }
