@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day0214" />
+    <file type="web" url="file://$PROJECT_DIR$/day0215" />
+    <file type="web" url="file://$PROJECT_DIR$/day0216" />
+    <file type="web" url="file://$PROJECT_DIR$/day215" />
+    <file type="web" url="file://$PROJECT_DIR$/dday0215" />
+    <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/LoginDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/RequestDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/SessionDemo" />
+    <file type="web" url="file://$PROJECT_DIR$/Test" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/day0215/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
