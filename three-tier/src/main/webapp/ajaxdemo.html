@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<img src="imgs/a.gif" alt="">
 
 <button onclick="fun()">点我一下</button>
 
@@ -15,14 +16,23 @@
         myrequest = null;
 
         if (window.XMLHttpRequest) {
-            myrequest=new XMLHttpRequest();
+            myrequest = new XMLHttpRequest();
         } else {
-            myrequest=new ActiveXObject("Microsoft.XMLHTTP");
+            myrequest = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        myrequest.open("GET","ajax?username=jack",true);
+        myrequest.open("GET", "ajax?username=jack", true);
 
         myrequest.send();
+        myrequest.onreadystatechange = function () {
 
+
+            if (myrequest.readyState == 4 && myrequest.status == 200) {
+                alert(myrequest.responseText)
+            } else {
+                alert("跑路了")
+            }
+
+        }
 
     }
 

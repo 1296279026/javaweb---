@@ -12,10 +12,11 @@ public class AjaxDemo extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        String username=req.getParameter("username");
         System.out.println(username);
+        resp.getWriter().write(username);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        doGet(req,resp);
     }
 }

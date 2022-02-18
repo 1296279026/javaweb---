@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+<button id="btn">aaa</button>
+</body>
+<script>
+
+    $(function (){
+        $("#btn").click(function (){
+            // alert('11');
+            $.ajax({
+                type:'GET',
+                url:'ajax',
+                data:{username:'jack'},
+                success:function (date){
+                    console.log(date);
+                }
+            })
+
+        })
+    })
+
+</script>
+</html>

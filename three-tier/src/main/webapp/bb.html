@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</head>
+<body>
+<button id="btn">get</button>
+<button id="btn2">post</button>
+</body>
+<script>
+
+    $(function (){
+        $("#btn").click(function (){
+            // alert('11');
+            $.get("ajax",{username:'mike'},function (date){
+                console.log(date);
+            })
+
+        })
+
+        $("#btn2").click(function (){
+            // alert('11');
+            $.post("ajax",{username:'mike'},function (date){
+                console.log(date);
+            })
+
+        })
+    })
+
+</script>
+</html>

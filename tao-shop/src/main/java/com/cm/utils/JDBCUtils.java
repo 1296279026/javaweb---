@@ -2,7 +2,6 @@ package com.cm.utils;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidPooledConnection;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -15,8 +14,6 @@ public class JDBCUtils {
         druidDataSource.setUrl("jdbc:mysql:///product?useSSL=false");
         druidDataSource.setUsername("root");
         druidDataSource.setPassword("1234");
-
-
     }
 
     public static Connection getConnection() throws SQLException {
