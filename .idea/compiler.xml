@@ -12,8 +12,8 @@
         <module name="day0216" />
         <module name="three-tier" />
         <module name="HelloServlet" />
+        <module name="kuang_study" />
         <module name="LoginDemo" />
-        <module name="RequestDemo" />
         <module name="tao-shop" />
       </profile>
     </annotationProcessing>
@@ -22,6 +22,7 @@
       <module name="day0215" target="1.7" />
       <module name="day215" target="1.7" />
       <module name="JspDemo" target="1.5" />
+      <module name="RequestDemo" target="1.7" />
       <module name="Test" target="1.7" />
       <module name="three_tier" target="8" />
       <module name="三层架构_认识" target="8" />

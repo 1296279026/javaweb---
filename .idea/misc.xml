@@ -8,6 +8,7 @@
     <file type="web" url="file://$PROJECT_DIR$/day215" />
     <file type="web" url="file://$PROJECT_DIR$/dday0215" />
     <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/kuang_study" />
     <file type="web" url="file://$PROJECT_DIR$/LoginDemo" />
     <file type="web" url="file://$PROJECT_DIR$/RequestDemo" />
     <file type="web" url="file://$PROJECT_DIR$/SessionDemo" />
@@ -23,6 +24,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/RequestDemo/pom.xml" />
         <option value="$PROJECT_DIR$/day0215/pom.xml" />
         <option value="$PROJECT_DIR$/three_tier/pom.xml" />
         <option value="$PROJECT_DIR$/三层架构_认识/pom.xml" />
