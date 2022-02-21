@@ -18,6 +18,8 @@
     爱好: <input type="checkbox" name="hob" value="唱歌">唱歌
          <input type="checkbox" name="hob" value="跳舞">跳舞
          <input type="checkbox" name="hob" value="打篮球">打篮球
+        <img src="/Check" alt="">
+
 
 
     <input type="submit" value="登录">

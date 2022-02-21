@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Set;
 
 @WebServlet(name = "login", value = "/login")
 public class login extends HttpServlet {
@@ -19,15 +21,33 @@ public class login extends HttpServlet {
         System.out.println(method);
         System.out.println(username);
         System.out.println(password);
+        Map<String, String[]> parameterMap = request.getParameterMap();
+        Set<String> keys = parameterMap.keySet();
+        for (String key : keys) {
+
+            String[] value = parameterMap.get(key);
+
+            System.out.println(key + " = " + value[0]);
+
+        }
 
         String[] values = request.getParameterValues("hob");
         System.out.println(Arrays.toString(values));
         System.out.println();
-        //请求转发
-       // request.getRequestDispatcher(request.getContextPath() + "success.jsp").forward(request, response);
 
-        //重定向
-        response.sendRedirect(request.getContextPath()+"chongdingxiang.jsp");
+        if (request.getParameter("username").equalsIgnoreCase("zs")) {
+            //请求转发
+            request.getRequestDispatcher(request.getContextPath() + "success.jsp").forward(request, response);
+
+        } else {
+            //重定向
+            response.sendRedirect(request.getContextPath() + "chongdingxiang.jsp");
+
+        }
+//        LineCaptcha lineCaptcha = CaptchaUtil.createLineCaptcha(200, 100);
+//        //图形验证码写出，可以写出到文件，也可以写出到流
+//        lineCaptcha.write("d:/line.png");
+        //
 
 
     }

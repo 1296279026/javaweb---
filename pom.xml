@@ -13,7 +13,6 @@
 
         <module>HelloServlet</module>
         <module>SessionDemo</module>
-        <module>RequestDemo</module>
         <module>day0214</module>
         <module>LoginDemo</module>
         <module>dday0215</module>
@@ -21,6 +20,7 @@
         <module>three-tier</module>
         <module>tao-shop</module>
         <module>kuang_study</module>
+        <module>day0221</module>
 
 
     </modules>
